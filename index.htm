@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário Completo</title>
+</head>
+<body>
+
+    <h1>Formulário Completo</h1>
+
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="100">
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="seuemail@seuemail.com" required>
+
+            <label for="email">Senha:</label>
+            <input type="password" id="senha" name="email" placeholder="Digite sua senha" required>
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" placeholder="Digite sua idade" min="18" max="120" required>
+
+            <label for="data-de-nascimento">Data de nascimento:</label>
+            <input type="date" id="data-de-nascimento" name="data-de-nascimento" required>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder="http://www.seusite.com">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+            <label>Gênero:</label>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="genero" required>
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="genero" required>
+
+            <label>Interesses:</label>
+            <input type="checkbox" id="tecnologia" name="interesses" value="esportes">
+            <label for="esportes">Esportes</label>
+
+            <input type="checkbox" id="moda" name="interesses" value="moda">
+            <label for="moda">Moda</label>
+
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade" required>
+                <option value="sao-paulo">São Paulo</option>
+                <option value="rio-de-janeiro">Rio Janeiro</option>
+                <option value="belo-horizonte">Belo Horizonte</option>
+                <option value="brasilia">Brasília</option>
+                <option value="salvador">Salvador</option>
+            </select>
+
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" rows="5" placeholder="Deixe sua mensagem!"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enviar um arquivo</legend>
+            <label for="foto">Foto de perfil:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
